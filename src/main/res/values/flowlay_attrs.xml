@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlowLayoutAttrs">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="itemSize" format="dimension" />
+        <attr name="itemColor" format="color" />
+        <attr name="backgroundResource" format="reference" />
+        <attr name="textPaddingH" format="dimension" />
+        <attr name="textPaddingV" format="dimension" />
+		 <attr name="textMinHeight" format="dimension" />
+		 <attr name="textMinWidth" format="dimension" />
+		
+    </declare-styleable>
+</resources>
