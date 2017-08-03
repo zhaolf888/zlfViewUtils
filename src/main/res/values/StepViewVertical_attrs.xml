@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StepViewVertical">
+        <attr format="dimension" name="v_bg_radius"/>
+        <attr format="dimension" name="v_pro_radius"/>
+        <attr format="dimension" name="v_bg_width"/>
+        <attr format="color" name="v_bg_color"/>
+        <attr format="dimension" name="v_pro_width"/>
+        <attr format="color" name="v_pro_color"/>
+        <attr format="dimension" name="v_interval"/>
+        <attr format="dimension" name="v_bgPositionX"/>
+        <attr format="integer" name="v_max_step"/>
+        <attr format="integer" name="v_pro_step"/>
+        <attr format="dimension" name="v_textPaddingLeft"/>
+        <attr format="dimension" name="v_timePaddingRight"/>
+        <attr format="dimension" name="v_textMoveTop"/>
+        <attr format="dimension" name="v_timeMoveTop"/>
+        <attr format="dimension" name="v_textsize"/>
+    </declare-styleable>
+</resources>

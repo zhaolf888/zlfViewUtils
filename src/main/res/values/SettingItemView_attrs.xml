@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemView">
+        <attr name="leftText" format="string"/>
+        <attr name="leftIcon" format="integer"/>
+        <attr name="rightIcon" format="integer"/>
+        <attr name="tvSize" format="dimension"/>
+        <attr name="tvColor" format="color"/>
+        <attr name="isShowUnderLine" format="boolean"/>
+        <attr name="rightStyle" format="enum">
+            <enum name="iconShow" value="0"/>
+            <enum name="iconHide" value="1"/>
+            <enum name="iconCheck" value="2"/>
+            <enum name="iconSwitch" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

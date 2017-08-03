@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StepViewHorizontal">
+        <attr format="dimension" name="h_bg_radius"/>
+        <attr format="dimension" name="h_pro_radius"/>
+        <attr format="dimension" name="h_bg_width"/>
+        <attr format="color" name="h_bg_color"/>
+        <attr format="dimension" name="h_pro_width"/>
+        <attr format="color" name="h_pro_color"/>
+        <attr format="dimension" name="h_text_padding"/>
+        <attr format="dimension" name="h_time_padding"/>
+        <attr format="integer" name="h_max_step"/>
+        <attr format="dimension" name="h_textsize"/>
+        <attr format="integer" name="h_pro_step"/>
+    </declare-styleable>
+</resources>

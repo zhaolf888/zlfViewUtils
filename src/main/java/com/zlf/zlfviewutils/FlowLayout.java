@@ -21,6 +21,62 @@ import java.util.List;
  * 作者：zhaolifeng
  * 时间：2017/06/14 10:17
  * 描述：关键词 流式布局
+ *
+ * 使用： <com.zlf.zlfviewutils.FlowLayout
+             android:id="@+id/search_hot_fl_keyword"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="10dp"
+             android:maxHeight="70dp"
+             app:backgroundResource="@drawable/btn_his_key_gray"
+             app:horizontalSpacing="10dp"
+             app:itemColor="@color/title_text"
+             app:itemSize="12sp"
+             app:textPaddingH="10dp"
+             app:textPaddingV="0dp"
+             app:verticalSpacing="10dp" />
+
+
+
+ ArrayList<String> mHotList =new ArrayList<>();
+
+ mHotList.add("测试1");
+ mHotList.add("测试2");
+ mHotList.add("测试3");
+...
+ mHotList.add("测试10");
+
+ search_hot_fl_keyword.setFlowLayout(mHotList, new MyBtnClick());
+ search_hot_fl_keyword.post(new Runnable() {
+@Override
+public void run() {
+LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) search_hot_fl_keyword.getLayoutParams();
+if (search_hot_fl_keyword.getHeight() > dp2px(70)) {//最多显示2行
+params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, dp2px(70));
+params.setMargins(dp2px(10), dp2px(5), dp2px(10), dp2px(5));
+search_hot_fl_keyword.setLayoutParams(params);
+search_hot_fl_keyword.invalidate();
+}
+search_hot_fl_keyword.setVisibility(View.VISIBLE);
+}
+});
+
+
+ private class MyBtnClick implements FlowLayout.OnItemClickListener {
+@Override
+public void onItemClick(String content) {
+mSearch.setText(content);
+KeyboardUtils.hideKeywordMethod(SearchByKeyActivity.this);
+saveSearchHistoryRecord(content);
+gotoSearchAct(content);
+}
+
+
+}
+
+
  */
 public class FlowLayout extends RelativeLayout {
 
