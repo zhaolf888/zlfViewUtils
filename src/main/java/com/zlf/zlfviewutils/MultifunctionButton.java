@@ -25,7 +25,7 @@ import android.view.View;
  * 项目名称：com.zlf.zlfviewutils
  * 项目版本：Test
  * 创建人：zhaolifeng
- * 创建时间：2017/7/26 0026 17:04
+ * 创建时间：
  * 修改人：Administrator
  * 修改时间：2017/7/26 0026 17:04
  * 类描述：
