@@ -2,8 +2,8 @@
 <resources>
     <declare-styleable name="SettingItemView">
         <attr name="leftText" format="string"/>
-        <attr name="leftIcon" format="integer"/>
-        <attr name="rightIcon" format="integer"/>
+        <attr name="leftIcon" format="reference"/>
+        <attr name="rightIcon" format="reference"/>
         <attr name="tvSize" format="dimension"/>
         <attr name="tvColor" format="color"/>
         <attr name="isShowUnderLine" format="boolean"/>
